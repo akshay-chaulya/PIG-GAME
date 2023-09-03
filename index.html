@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
+</head>
+
+<body>
+    <div class="modalForWinning"></div>
+    <div class="main">
+        <div class="container">
+            <div class="operationContainer">
+                <button id="resetBtn"><img src="reset.svg"> NEW GAME</button>
+                <div id="lodoBox">
+                    <div></div>
+                    <img id="diceImg" src="dice-1-fill.svg">
+                </div>
+                <div class="opartionSection">
+                    <button id="rollBtn"><i>🎲</i> ROLL DICE</button>
+                    <button id="holdBtn"><i>📥</i> HOLD</button>
+                </div>
+            </div>
+
+            <div class="first playerBox p1Active">
+                <div class="final-box">
+                    <span>PLAYER 1</span>
+                    <div class="P1TS totalScore">0</div>
+                </div>
+
+                <div class="currentBox">
+                    <span>CURRENT</span>
+                    <div class="P1C currentScore">0</div>
+                </div>
+            </div>
+
+            <div class="second playerBox">
+                <div class="final-box">
+                    <span>PLAYER 2</span>
+                    <div class="P2TS totalScore">0</div>
+                </div>
+
+                <div class="currentBox">
+                    <span>CURRENT</span>
+                    <div class="P2C currentScore">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overly hidde"></div>
+    </div>
+</body>
+
+</html>

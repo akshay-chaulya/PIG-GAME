@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(background-PC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalForWinning {
+    height: 0;
+    /* 15vmin */
+    width: 55%;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vmin;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.315);
+    transition: height 1s ease-in-out;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    height: 70%;
+    width: 55%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.315);
+    display: flex;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+.operationContainer {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: height 1s ease-in-out;
+}
+
+#resetBtn {
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+#resetBtn img {
+    padding-right: 5px;
+}
+
+#lodoBox {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#lodoBox div {
+    height: 80%;
+    width: 80%;
+    background-color: red;
+}
+
+#lodoBox img {
+    height: 100%;
+    width: 100%;
+    filter: invert(1);
+    position: absolute;
+}
+
+.opartionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.opartionSection button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.opartionSection i {
+    font-size: 1.1rem;
+    padding-right: 5px;
+}
+
+.playerBox {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px 0 0 8px;
+}
+
+.p1Active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px 0 0 8px;
+}
+
+.p2Active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 8px 8px 0;
+}
+
+.final-box {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 4vmin;
+}
+
+.totalScore {
+    font-size: 5vmin;
+}
+
+.currentBox {
+    height: 18vmin;
+    width: 22vmin;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    background-color: rgba(186, 63, 63, 0.804);
+}
+
+.currentScore {
+    font-size: 4vmin;
+}
+
+.overly {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.263);
+    z-index: 1;
+}
+
+.hidde {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        height: 70%;
+        width: 95%;
+    }
+
+    .opartionSection {
+        margin-top: 140px;
+    }
+}
